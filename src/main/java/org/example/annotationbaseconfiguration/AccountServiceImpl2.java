@@ -7,9 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service("accountService")
+
 public class AccountServiceImpl2 implements AccountService {
     @Autowired
     private AccountRepository accountRepository;
+
 
     @Override
     public void transferMoney (long fromAccountId, long toAccountId, double amount){
@@ -28,6 +30,7 @@ public class AccountServiceImpl2 implements AccountService {
     }
     @Override
     public Account getAccount(long accountId){
+
         return accountRepository.find(accountId);
     }
 }

@@ -33,7 +33,7 @@ public class AccountRepositoryImpl2 implements AccountRepository {
     }
 
     @Override
-    public Account find(long accoundId) {
-        return accountMap.get(accoundId);
+    public Account find(long accountId) {
+        return accountMap.get(accountId);
     }
 }

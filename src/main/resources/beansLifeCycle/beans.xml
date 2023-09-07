@@ -8,8 +8,7 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:annotation-config/>
-    <context:component-scan  base-package="annotationbaseconfiguration"/>
-    <context:component-scan base-package="org.example.beansLifeCycle"/>
+    <bean id = "accountRepository" class = "org.example.beansLifeCycle.beansLifeCycle"
+    init-method="init1" destroy-method="destroy"/>
 
 </beans>

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.javabasedconfiguration;
 
 import org.example.javabasedconfiguration.BeanConfiguration;
 import org.example.pojo.AccountService;
